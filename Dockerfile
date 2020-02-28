@@ -11,7 +11,8 @@ libreadline-dev \
 libbz2-dev \
 git \
 curl \
-zip
+zip \
+vim
 
 run git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git /home/ebcli
 

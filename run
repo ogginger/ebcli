@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -it -v $(pwd):/home/project -v $(pwd)/.elasticbeanstalk/config:~/.aws/config --name eb --net=host eb
+docker run -it -v $(pwd):/home/project -v $(pwd)/.elasticbeanstalk/config:/root/.aws/config --name eb --net=host eb
