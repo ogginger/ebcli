@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker stop eb
+docker rm eb
+docker run -it -v $(pwd)/.elasticbeanstalk/sshkey:/root/.ssh/sshkey -v $(pwd):/home/project -v $(pwd)/.elasticbeanstalk/config:/root/.aws/config --name eb --net=host eb
